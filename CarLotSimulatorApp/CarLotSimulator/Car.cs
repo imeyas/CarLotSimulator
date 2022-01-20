@@ -4,8 +4,12 @@ using System.Text;
 
 namespace CarLotSimulator
 {
-    internal class Car
+    public class Car
     {
+        public Car()
+        {
+
+        }
         
             private int year;
             public int Year

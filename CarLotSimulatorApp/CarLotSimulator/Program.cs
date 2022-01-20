@@ -58,12 +58,27 @@ namespace CarLotSimulator
 
             thirdCar.MakeHonkNoise();
 
+            Console.WriteLine($"--------------------------------------------------------------------------------------\n");
 
+            var myCarLot = new CarLot();
+
+            myCarLot.EsParkingLot.Add(thirdCar);
+            myCarLot.EsParkingLot.Add(firstCar);
+            myCarLot.EsParkingLot.Add(secondCar);
+
+            foreach (var car in myCarLot.EsParkingLot)
+                {
+                    Console.WriteLine($"{car.Year}, {car.Make}, {car.Model}...");
+                    
+                    car.MakeEngineNoise();
+                    car.MakeHonkNoise();
+                }
 
 
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
+
 
             //*************BONUS X 2*************//
 
