@@ -6,17 +6,60 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            //TODO
-
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
-
 
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+
+            Console.WriteLine($"\nMY FIRST CAR'S SWAG BE LIKE:");
+            Car firstCar = new Car()
+            {
+                Year = 2017,
+                Make = "Chevy",
+                Model = "Malibu",
+                EngineNoise = "Vroom",
+                HonkNoise = "Peep peep",
+                IsDriveable = true,
+            };
+
+            firstCar.MakeEngineNoise();
+
+            firstCar.MakeHonkNoise();
+
+            Console.WriteLine($"\nMY SECOND CAR'S SWAG BE LIKE:");
+
+            Car secondCar = new Car()
+            {
+                Year = 1977,
+                Make = "Ford",
+                Model = "Mustang",
+                EngineNoise = "Vrooooooommmmmmm",
+                HonkNoise = "Peeeeeeep",
+                IsDriveable = true,
+            };
+
+            secondCar.MakeEngineNoise();
+
+            secondCar.MakeHonkNoise();
+
+            Console.WriteLine($"\nAND MY THIRD CAR PULLS UP LIKE:");
+
+            Car thirdCar = new Car()
+            {
+                Year = 2019,
+                Make = "Tesla",
+                Model = "S3XY",
+                EngineNoise = "Pmmmmmmm",
+                HonkNoise = "Peep",
+                IsDriveable = true,
+            };
+
+            thirdCar.MakeEngineNoise();
+
+            thirdCar.MakeHonkNoise();
+
+
+
 
             //*************BONUS*************//
 
