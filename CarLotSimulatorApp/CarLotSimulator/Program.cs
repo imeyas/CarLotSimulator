@@ -12,7 +12,7 @@ namespace CarLotSimulator
             //Call each of the methods for each car
 
             Console.WriteLine($"\nMY FIRST CAR'S SWAG BE LIKE:");
-            Car firstCar = new Car()
+            var firstCar = new Car()
             {
                 Year = 2017,
                 Make = "Chevy",
@@ -28,7 +28,7 @@ namespace CarLotSimulator
 
             Console.WriteLine($"\nMY SECOND CAR'S SWAG BE LIKE:");
 
-            Car secondCar = new Car()
+            var secondCar = new Car()
             {
                 Year = 1977,
                 Make = "Ford",
@@ -44,7 +44,7 @@ namespace CarLotSimulator
 
             Console.WriteLine($"\nAND MY THIRD CAR PULLS UP LIKE:");
 
-            Car thirdCar = new Car()
+            var thirdCar = new Car()
             {
                 Year = 2019,
                 Make = "Tesla",
